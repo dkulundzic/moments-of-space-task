@@ -6,7 +6,9 @@ struct MomentsOfSpaceApp: App {
     var body: some Scene {
         WindowGroup {
             MeditationsListView(
-                store: Store(initialState: MeditationsListReducer.State()) {
+                store: Store(
+                    initialState: MeditationsListReducer.State()
+                ) {
                     MeditationsListReducer()
                 }
             )
