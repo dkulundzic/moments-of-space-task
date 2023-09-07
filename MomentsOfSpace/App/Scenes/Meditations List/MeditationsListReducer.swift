@@ -11,6 +11,7 @@ final class MeditationsListReducer {
 
     enum Action {
         case onFirstAppear
+        case onMeditationsFetchRequested
         case onSignificantLocationChange
         case onLocationButtonTap
         case onMeditationsFetched([Meditation])
@@ -27,19 +28,25 @@ extension MeditationsListReducer: Reducer {
     ) -> Effect<Action> {
         switch action {
         case .onFirstAppear:
+            return .send(.onMeditationsFetchRequested)
+
+        case .onSignificantLocationChange:
+            return .send(.onMeditationsFetchRequested)
+
+        case .onLocationButtonTap:
+            return .none
+
+        case .onMeditationsFetchRequested:
+            state.isLoading = true
+
             return .run { [meditationsNetworkService] send in
                 let meditations = try await meditationsNetworkService
                     .retrieveMeditations(for: nil)
                 await send(.onMeditationsFetched(meditations))
             }
 
-        case .onSignificantLocationChange:
-            return .none
-
-        case .onLocationButtonTap:
-            return .none
-
         case let .onMeditationsFetched(meditations):
+            state.isLoading = false
             state.meditations = IdentifiedArray(uniqueElements: meditations)
             return .none
         }

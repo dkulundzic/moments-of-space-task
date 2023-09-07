@@ -6,15 +6,28 @@ extension MeditationsListView {
         let meditation: Meditation
 
         var body: some View {
-            HStack {
-                VStack(alignment: .leading, spacing: 16) {
-                    Text(meditation.title)
-                    Text(meditation.subtitle)
+            ZStack {
+                Color(.white)
+
+                HStack {
+                    VStack(alignment: .leading, spacing: 16) {
+                        Text(meditation.title)
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color(asset: Asset.Colors.darkGray))
+                        Text(meditation.subtitle)
+                            .font(.body)
+                            .fontWeight(.medium)
+                            .foregroundColor(Color(asset: Asset.Colors.darkGray))
+                    }
+                    Spacer()
+                    Text(meditation.totalDurationInSeconds.description)
                 }
-                Spacer()
-                Text(meditation.totalDurationInSeconds.description)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 24)
             }
-            .padding()
+            .cornerRadius(16)
+            .shadow(radius: 4)
         }
     }
 }

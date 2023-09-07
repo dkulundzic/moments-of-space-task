@@ -33,7 +33,7 @@ public struct AudioFile: Codable, Equatable {
 extension AudioFile: Mockable {
     // swiftlint:disable force_unwrapping
     public static func mock() -> AudioFile {
-        let id = (0...Int.max).randomElement()!
+        let id = (0...10000).randomElement()!
         let name = id.description
         let duration = (120...54600).randomElement()!
         return AudioFile(

@@ -8,11 +8,12 @@ public protocol MeditationsNetworkService {
 
 public final class DefaultMeditationsNetworkService: MeditationsNetworkService {
     public init() { }
-    
+
     public func retrieveMeditations(
         for location: CLLocationCoordinate2D?
     ) async throws -> [Meditation] {
-        mockedMeditations()
+        try await Task.sleep(for: Duration.seconds(1))
+        return mockedMeditations()
     }
 }
 
