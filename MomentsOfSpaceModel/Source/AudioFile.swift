@@ -5,14 +5,20 @@ public struct AudioFile: Codable {
     public let name: String
     public let url: URL
     public let version: String
-    public let duration: Int
+    public let durationInSeconds: Int
 
-    public init(id: Int, name: String, url: URL, version: String, duration: Int) {
+    public init(
+        id: Int,
+        name: String,
+        url: URL,
+        version: String,
+        durationInSeconds: Int
+    ) {
         self.id = id
         self.name = name
         self.url = url
         self.version = version
-        self.duration = duration
+        self.durationInSeconds = durationInSeconds
     }
 
     private enum CodingKeys: String, CodingKey {
@@ -20,6 +26,23 @@ public struct AudioFile: Codable {
         case name
         case url = "audio"
         case version
-        case duration = "duration_seconds"
+        case durationInSeconds = "duration_seconds"
     }
+}
+
+extension AudioFile: Mockable {
+    // swiftlint:disable force_unwrapping
+    public static func mock() -> AudioFile {
+        let id = (0...Int.max).randomElement()!
+        let name = id.description
+        let duration = (120...54600).randomElement()!
+        return AudioFile(
+            id: id,
+            name: name,
+            url: URL(string: "https://api.momentsofspace.com/api/audio/101/download/")!,
+            version: "1.0",
+            durationInSeconds: duration
+        )
+    }
+    // swiftlint:enable force_unwrapping
 }

@@ -12,6 +12,13 @@
 		2F36D0C92AA9C125007471B4 /* MomentsOfSpaceModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F36D0C12AA9C125007471B4 /* MomentsOfSpaceModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F36D0CF2AA9C142007471B4 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F36D0CE2AA9C142007471B4 /* Meditation.swift */; };
 		2F36D0D12AA9C163007471B4 /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F36D0D02AA9C163007471B4 /* AudioFile.swift */; };
+		2F36D0DA2AA9C2A9007471B4 /* MomentsOfSpaceNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F36D0D92AA9C2A9007471B4 /* MomentsOfSpaceNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F36D0DD2AA9C2A9007471B4 /* MomentsOfSpaceNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F36D0D72AA9C2A9007471B4 /* MomentsOfSpaceNetworking.framework */; };
+		2F36D0DE2AA9C2A9007471B4 /* MomentsOfSpaceNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F36D0D72AA9C2A9007471B4 /* MomentsOfSpaceNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F36D0E42AA9C2BC007471B4 /* MeditationsNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F36D0E32AA9C2BC007471B4 /* MeditationsNetworkService.swift */; };
+		2F36D0E62AA9C315007471B4 /* MomentsOfSpaceModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F36D0C12AA9C125007471B4 /* MomentsOfSpaceModel.framework */; };
+		2F36D0E72AA9C315007471B4 /* MomentsOfSpaceModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F36D0C12AA9C125007471B4 /* MomentsOfSpaceModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F36D0EC2AA9C362007471B4 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F36D0EB2AA9C362007471B4 /* Mockable.swift */; };
 		2F739F342AA9BD3F00D07773 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2F739F332AA9BD3F00D07773 /* ComposableArchitecture */; };
 		2F739F362AA9BE0000D07773 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F739F352AA9BE0000D07773 /* Colors.xcassets */; };
 		2F739F3B2AA9BECF00D07773 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F739F3A2AA9BECF00D07773 /* Localizable.strings */; };
@@ -31,6 +38,20 @@
 			remoteGlobalIDString = 2F36D0C02AA9C125007471B4;
 			remoteInfo = MomentsOfSpaceModel;
 		};
+		2F36D0DB2AA9C2A9007471B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F7FD0F32AA9B54400AB435E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F36D0D62AA9C2A9007471B4;
+			remoteInfo = MomentsOfSpaceNetworking;
+		};
+		2F36D0E82AA9C315007471B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F7FD0F32AA9B54400AB435E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F36D0C02AA9C125007471B4;
+			remoteInfo = MomentsOfSpaceModel;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,7 +61,19 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2F36D0DE2AA9C2A9007471B4 /* MomentsOfSpaceNetworking.framework in Embed Frameworks */,
 				2F36D0C92AA9C125007471B4 /* MomentsOfSpaceModel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F36D0EA2AA9C315007471B4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2F36D0E72AA9C315007471B4 /* MomentsOfSpaceModel.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +85,10 @@
 		2F36D0C32AA9C125007471B4 /* MomentsOfSpaceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MomentsOfSpaceModel.h; sourceTree = "<group>"; };
 		2F36D0CE2AA9C142007471B4 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
 		2F36D0D02AA9C163007471B4 /* AudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
+		2F36D0D72AA9C2A9007471B4 /* MomentsOfSpaceNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MomentsOfSpaceNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F36D0D92AA9C2A9007471B4 /* MomentsOfSpaceNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MomentsOfSpaceNetworking.h; sourceTree = "<group>"; };
+		2F36D0E32AA9C2BC007471B4 /* MeditationsNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationsNetworkService.swift; sourceTree = "<group>"; };
+		2F36D0EB2AA9C362007471B4 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
 		2F739F352AA9BE0000D07773 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		2F739F3A2AA9BECF00D07773 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2F739F3E2AA9BEED00D07773 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
@@ -71,10 +108,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F36D0D42AA9C2A9007471B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F36D0E62AA9C315007471B4 /* MomentsOfSpaceModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F7FD0F82AA9B54400AB435E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F36D0DD2AA9C2A9007471B4 /* MomentsOfSpaceNetworking.framework in Frameworks */,
 				2F36D0C72AA9C125007471B4 /* MomentsOfSpaceModel.framework in Frameworks */,
 				2F739F342AA9BD3F00D07773 /* ComposableArchitecture in Frameworks */,
 			);
@@ -97,8 +143,33 @@
 			children = (
 				2F36D0D02AA9C163007471B4 /* AudioFile.swift */,
 				2F36D0CE2AA9C142007471B4 /* Meditation.swift */,
+				2F36D0EB2AA9C362007471B4 /* Mockable.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		2F36D0D82AA9C2A9007471B4 /* MomentsOfSpaceNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				2F36D0D92AA9C2A9007471B4 /* MomentsOfSpaceNetworking.h */,
+				2F36D0E22AA9C2AF007471B4 /* Source */,
+			);
+			path = MomentsOfSpaceNetworking;
+			sourceTree = "<group>";
+		};
+		2F36D0E22AA9C2AF007471B4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2F36D0E32AA9C2BC007471B4 /* MeditationsNetworkService.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2F36D0E52AA9C315007471B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2F739F2D2AA9BA5500D07773 /* App */ = {
@@ -159,7 +230,9 @@
 			children = (
 				2F7FD0FD2AA9B54400AB435E /* MomentsOfSpace */,
 				2F36D0C22AA9C125007471B4 /* MomentsOfSpaceModel */,
+				2F36D0D82AA9C2A9007471B4 /* MomentsOfSpaceNetworking */,
 				2F7FD0FC2AA9B54400AB435E /* Products */,
+				2F36D0E52AA9C315007471B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +241,7 @@
 			children = (
 				2F7FD0FB2AA9B54400AB435E /* MomentsOfSpace.app */,
 				2F36D0C12AA9C125007471B4 /* MomentsOfSpaceModel.framework */,
+				2F36D0D72AA9C2A9007471B4 /* MomentsOfSpaceNetworking.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,6 +275,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F36D0D22AA9C2A9007471B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F36D0DA2AA9C2A9007471B4 /* MomentsOfSpaceNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -222,6 +304,26 @@
 			productReference = 2F36D0C12AA9C125007471B4 /* MomentsOfSpaceModel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		2F36D0D62AA9C2A9007471B4 /* MomentsOfSpaceNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F36D0DF2AA9C2A9007471B4 /* Build configuration list for PBXNativeTarget "MomentsOfSpaceNetworking" */;
+			buildPhases = (
+				2F36D0D22AA9C2A9007471B4 /* Headers */,
+				2F36D0D32AA9C2A9007471B4 /* Sources */,
+				2F36D0D42AA9C2A9007471B4 /* Frameworks */,
+				2F36D0D52AA9C2A9007471B4 /* Resources */,
+				2F36D0EA2AA9C315007471B4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F36D0E92AA9C315007471B4 /* PBXTargetDependency */,
+			);
+			name = MomentsOfSpaceNetworking;
+			productName = MomentsOfSpaceNetworking;
+			productReference = 2F36D0D72AA9C2A9007471B4 /* MomentsOfSpaceNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		2F7FD0FA2AA9B54400AB435E /* MomentsOfSpace */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F7FD1092AA9B54500AB435E /* Build configuration list for PBXNativeTarget "MomentsOfSpace" */;
@@ -237,6 +339,7 @@
 			);
 			dependencies = (
 				2F36D0C62AA9C125007471B4 /* PBXTargetDependency */,
+				2F36D0DC2AA9C2A9007471B4 /* PBXTargetDependency */,
 			);
 			name = MomentsOfSpace;
 			packageProductDependencies = (
@@ -257,6 +360,10 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					2F36D0C02AA9C125007471B4 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+					};
+					2F36D0D62AA9C2A9007471B4 = {
 						CreatedOnToolsVersion = 14.3.1;
 						LastSwiftMigration = 1430;
 					};
@@ -283,12 +390,20 @@
 			targets = (
 				2F7FD0FA2AA9B54400AB435E /* MomentsOfSpace */,
 				2F36D0C02AA9C125007471B4 /* MomentsOfSpaceModel */,
+				2F36D0D62AA9C2A9007471B4 /* MomentsOfSpaceNetworking */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2F36D0BF2AA9C125007471B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F36D0D52AA9C2A9007471B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,7 +441,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ $CI ]; then\n  # Exit early if we are in CI environment\n  exit 0\nfi\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint MomentsOfSpace\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if [ $CI ]; then\n  # Exit early if we are in CI environment\n  exit 0\nfi\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n    swiftlint MomentsOfSpace\n    swiftlint MomentsOfSpaceModel\n    swiftlint MomentsOfSpaceNetworking\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		2F739F422AA9C02300D07773 /* Run Swiftgen */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -356,7 +471,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F36D0D12AA9C163007471B4 /* AudioFile.swift in Sources */,
+				2F36D0EC2AA9C362007471B4 /* Mockable.swift in Sources */,
 				2F36D0CF2AA9C142007471B4 /* Meditation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F36D0D32AA9C2A9007471B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F36D0E42AA9C2BC007471B4 /* MeditationsNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +502,16 @@
 			isa = PBXTargetDependency;
 			target = 2F36D0C02AA9C125007471B4 /* MomentsOfSpaceModel */;
 			targetProxy = 2F36D0C52AA9C125007471B4 /* PBXContainerItemProxy */;
+		};
+		2F36D0DC2AA9C2A9007471B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F36D0D62AA9C2A9007471B4 /* MomentsOfSpaceNetworking */;
+			targetProxy = 2F36D0DB2AA9C2A9007471B4 /* PBXContainerItemProxy */;
+		};
+		2F36D0E92AA9C315007471B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F36D0C02AA9C125007471B4 /* MomentsOfSpaceModel */;
+			targetProxy = 2F36D0E82AA9C315007471B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -441,6 +575,75 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codeopolis.MomentsOfSpaceModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2F36D0E02AA9C2A9007471B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5Y2HY26HKK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeopolis.MomentsOfSpaceNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2F36D0E12AA9C2A9007471B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5Y2HY26HKK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeopolis.MomentsOfSpaceNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -633,6 +836,15 @@
 			buildConfigurations = (
 				2F36D0CA2AA9C125007471B4 /* Debug */,
 				2F36D0CB2AA9C125007471B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F36D0DF2AA9C2A9007471B4 /* Build configuration list for PBXNativeTarget "MomentsOfSpaceNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F36D0E02AA9C2A9007471B4 /* Debug */,
+				2F36D0E12AA9C2A9007471B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
