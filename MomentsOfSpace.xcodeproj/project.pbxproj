@@ -140,8 +140,8 @@
 		2F2F47212AA9CC0700EF8B0C /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				2F2F472C2AA9D4DF00EF8B0C /* Extension */,
 				2F2F47282AA9CE4300EF8B0C /* Dependencies */,
+				2F2F472C2AA9D4DF00EF8B0C /* Extension */,
 				2F2F47242AA9CC1F00EF8B0C /* UI */,
 			);
 			path = Common;
