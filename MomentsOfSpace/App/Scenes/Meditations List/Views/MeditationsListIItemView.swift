@@ -13,15 +13,20 @@ extension MeditationsListView {
                     VStack(alignment: .leading, spacing: 16) {
                         Text(meditation.title)
                             .font(.title3)
-                            .fontWeight(.bold)
+                            .fontWeight(.heavy)
                             .foregroundColor(Color(asset: Asset.Colors.darkGray))
                         Text(meditation.subtitle)
-                            .font(.body)
-                            .fontWeight(.medium)
+                            .font(.subheadline)
+                            .fontWeight(.light)
                             .foregroundColor(Color(asset: Asset.Colors.darkGray))
                     }
                     Spacer()
-                    Text(meditation.totalDurationInSeconds.description)
+                    Text(
+                        meditation.totalDurationInSeconds.formatted(.units(allowed: [.hours, .minutes]))
+                    )
+                    .font(.body)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(asset: Asset.Colors.darkGray))
                 }
                 .padding(.horizontal, 16)
                 .padding(.vertical, 24)

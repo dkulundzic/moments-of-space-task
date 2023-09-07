@@ -23,8 +23,9 @@ public struct Meditation: Codable, Identifiable, Equatable {
 }
 
 public extension Meditation {
-    var totalDurationInSeconds: Int {
-        audioFiles.reduce(0, { $0 + $1.durationInSeconds })
+    var totalDurationInSeconds: Duration {
+        let seconds = audioFiles.reduce(0, { $0 + $1.durationInSeconds })
+        return .seconds(seconds)
     }
 }
 
