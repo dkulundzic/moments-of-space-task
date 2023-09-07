@@ -7,17 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F739F342AA9BD3F00D07773 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2F739F332AA9BD3F00D07773 /* ComposableArchitecture */; };
+		2F739F362AA9BE0000D07773 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F739F352AA9BE0000D07773 /* Colors.xcassets */; };
+		2F739F3B2AA9BECF00D07773 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F739F3A2AA9BECF00D07773 /* Localizable.strings */; };
+		2F739F3F2AA9BEED00D07773 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F739F3E2AA9BEED00D07773 /* Strings.swift */; };
+		2F739F412AA9BEF000D07773 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F739F402AA9BEF000D07773 /* Assets.swift */; };
 		2F7FD0FF2AA9B54400AB435E /* MomentsOfSpaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7FD0FE2AA9B54400AB435E /* MomentsOfSpaceApp.swift */; };
 		2F7FD1012AA9B54400AB435E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7FD1002AA9B54400AB435E /* ContentView.swift */; };
-		2F7FD1032AA9B54500AB435E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7FD1022AA9B54500AB435E /* Assets.xcassets */; };
+		2F7FD1032AA9B54500AB435E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7FD1022AA9B54500AB435E /* Images.xcassets */; };
 		2F7FD1062AA9B54500AB435E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7FD1052AA9B54500AB435E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F739F352AA9BE0000D07773 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		2F739F3A2AA9BECF00D07773 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		2F739F3E2AA9BEED00D07773 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		2F739F402AA9BEF000D07773 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		2F7FD0FB2AA9B54400AB435E /* MomentsOfSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomentsOfSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7FD0FE2AA9B54400AB435E /* MomentsOfSpaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsOfSpaceApp.swift; sourceTree = "<group>"; };
 		2F7FD1002AA9B54400AB435E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2F7FD1022AA9B54500AB435E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F7FD1022AA9B54500AB435E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2F7FD1052AA9B54500AB435E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F739F342AA9BD3F00D07773 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +62,9 @@
 		2F739F2F2AA9BA5F00D07773 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2F739F3D2AA9BEE500D07773 /* Generated */,
 				2F739F302AA9BA6800D07773 /* Assets */,
+				2F739F392AA9BEBF00D07773 /* Localization */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -60,9 +72,27 @@
 		2F739F302AA9BA6800D07773 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				2F7FD1022AA9B54500AB435E /* Assets.xcassets */,
+				2F7FD1022AA9B54500AB435E /* Images.xcassets */,
+				2F739F352AA9BE0000D07773 /* Colors.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		2F739F392AA9BEBF00D07773 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				2F739F3A2AA9BECF00D07773 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		2F739F3D2AA9BEE500D07773 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				2F739F402AA9BEF000D07773 /* Assets.swift */,
+				2F739F3E2AA9BEED00D07773 /* Strings.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		2F7FD0F22AA9B54400AB435E = {
@@ -108,6 +138,7 @@
 			buildPhases = (
 				2F7FD0F72AA9B54400AB435E /* Sources */,
 				2F739F312AA9BB1500D07773 /* Run Swiftlint */,
+				2F739F422AA9C02300D07773 /* Run Swiftgen */,
 				2F7FD0F82AA9B54400AB435E /* Frameworks */,
 				2F7FD0F92AA9B54400AB435E /* Resources */,
 			);
@@ -116,6 +147,9 @@
 			dependencies = (
 			);
 			name = MomentsOfSpace;
+			packageProductDependencies = (
+				2F739F332AA9BD3F00D07773 /* ComposableArchitecture */,
+			);
 			productName = MomentsOfSpace;
 			productReference = 2F7FD0FB2AA9B54400AB435E /* MomentsOfSpace.app */;
 			productType = "com.apple.product-type.application";
@@ -144,6 +178,9 @@
 				Base,
 			);
 			mainGroup = 2F7FD0F22AA9B54400AB435E;
+			packageReferences = (
+				2F739F322AA9BD3F00D07773 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 2F7FD0FC2AA9B54400AB435E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,8 +195,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F739F362AA9BE0000D07773 /* Colors.xcassets in Resources */,
+				2F739F3B2AA9BECF00D07773 /* Localizable.strings in Resources */,
 				2F7FD1062AA9B54500AB435E /* Preview Assets.xcassets in Resources */,
-				2F7FD1032AA9B54500AB435E /* Assets.xcassets in Resources */,
+				2F7FD1032AA9B54500AB435E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +224,26 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ $CI ]; then\n  # Exit early if we are in CI environment\n  exit 0\nfi\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint MomentsOfSpace\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		2F739F422AA9C02300D07773 /* Run Swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/MomentsOfSpace/Resources/Assets/Images.xcassets",
+				"$(SRCROOT)/MomentsOfSpace/Resources/Assets/Images.xcassets",
+			);
+			name = "Run Swiftgen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftgen > /dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen is not installed. See 'https://github.com/SwiftGen/SwiftGen#installation' for installation instructions.\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -193,6 +252,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F7FD1012AA9B54400AB435E /* ContentView.swift in Sources */,
+				2F739F3F2AA9BEED00D07773 /* Strings.swift in Sources */,
+				2F739F412AA9BEF000D07773 /* Assets.swift in Sources */,
 				2F7FD0FF2AA9B54400AB435E /* MomentsOfSpaceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +455,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F739F322AA9BD3F00D07773 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F739F332AA9BD3F00D07773 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F739F322AA9BD3F00D07773 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F7FD0F32AA9B54400AB435E /* Project object */;
 }

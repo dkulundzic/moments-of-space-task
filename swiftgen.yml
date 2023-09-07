@@ -1,0 +1,15 @@
+xcassets:
+  - inputs:
+    - MomentsOfSpace/Resources/Assets/Images.xcassets
+    - MomentsOfSpace/Resources/Assets/Colors.xcassets
+    outputs:
+      - templateName: swift5
+        params:
+          forceProvidesNamespaces: true
+        output: MomentsOfSpace/Resources/Generated/Assets.swift
+
+strings:
+  inputs: MomentsOfSpace/Resources/Localization/Localizable.strings
+  outputs:
+    templateName: structured-swift5
+    output: MomentsOfSpace/Resources/Generated/Strings.swift
