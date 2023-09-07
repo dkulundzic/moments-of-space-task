@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Meditation: Codable {
+public struct Meditation: Codable, Identifiable, Equatable {
     public let id: Int
     public let audioFiles: [AudioFile]
     public let title: String
@@ -19,5 +19,23 @@ public struct Meditation: Codable {
         self.title = title
         self.subtitle = subtitle
         self.description = description
+    }
+}
+
+public extension Meditation {
+    var totalDurationInSeconds: Int {
+        audioFiles.reduce(0, { $0 + $1.durationInSeconds })
+    }
+}
+
+extension Meditation: Mockable {
+    public static func mock() -> Meditation {
+        Meditation(
+            id: 1,
+            audioFiles: [.mock()],
+            title: "Mocked title",
+            subtitle: "Mocked subtitle",
+            description: "Mocked description"
+        )
     }
 }

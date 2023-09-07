@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F2F47272AA9CC3100EF8B0C /* ViewFirstAppearModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F47262AA9CC3100EF8B0C /* ViewFirstAppearModifier.swift */; };
+		2F2F472B2AA9CE4F00EF8B0C /* NetworkingDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F472A2AA9CE4F00EF8B0C /* NetworkingDependencies.swift */; };
 		2F36D0C42AA9C125007471B4 /* MomentsOfSpaceModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F36D0C32AA9C125007471B4 /* MomentsOfSpaceModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F36D0C72AA9C125007471B4 /* MomentsOfSpaceModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F36D0C12AA9C125007471B4 /* MomentsOfSpaceModel.framework */; };
 		2F36D0C92AA9C125007471B4 /* MomentsOfSpaceModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F36D0C12AA9C125007471B4 /* MomentsOfSpaceModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -19,13 +21,15 @@
 		2F36D0E62AA9C315007471B4 /* MomentsOfSpaceModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F36D0C12AA9C125007471B4 /* MomentsOfSpaceModel.framework */; };
 		2F36D0E72AA9C315007471B4 /* MomentsOfSpaceModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F36D0C12AA9C125007471B4 /* MomentsOfSpaceModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F36D0EC2AA9C362007471B4 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F36D0EB2AA9C362007471B4 /* Mockable.swift */; };
+		2F36D0EF2AA9C722007471B4 /* MeditationsListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F36D0EE2AA9C722007471B4 /* MeditationsListReducer.swift */; };
+		2F36D0F12AA9C72A007471B4 /* MeditationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F36D0F02AA9C72A007471B4 /* MeditationsListView.swift */; };
+		2F36D0F32AA9C731007471B4 /* MeditationsListIItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F36D0F22AA9C731007471B4 /* MeditationsListIItemView.swift */; };
 		2F739F342AA9BD3F00D07773 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2F739F332AA9BD3F00D07773 /* ComposableArchitecture */; };
 		2F739F362AA9BE0000D07773 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F739F352AA9BE0000D07773 /* Colors.xcassets */; };
 		2F739F3B2AA9BECF00D07773 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F739F3A2AA9BECF00D07773 /* Localizable.strings */; };
 		2F739F3F2AA9BEED00D07773 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F739F3E2AA9BEED00D07773 /* Strings.swift */; };
 		2F739F412AA9BEF000D07773 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F739F402AA9BEF000D07773 /* Assets.swift */; };
 		2F7FD0FF2AA9B54400AB435E /* MomentsOfSpaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7FD0FE2AA9B54400AB435E /* MomentsOfSpaceApp.swift */; };
-		2F7FD1012AA9B54400AB435E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7FD1002AA9B54400AB435E /* ContentView.swift */; };
 		2F7FD1032AA9B54500AB435E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7FD1022AA9B54500AB435E /* Images.xcassets */; };
 		2F7FD1062AA9B54500AB435E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7FD1052AA9B54500AB435E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -81,6 +85,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F2F47262AA9CC3100EF8B0C /* ViewFirstAppearModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFirstAppearModifier.swift; sourceTree = "<group>"; };
+		2F2F472A2AA9CE4F00EF8B0C /* NetworkingDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingDependencies.swift; sourceTree = "<group>"; };
 		2F36D0C12AA9C125007471B4 /* MomentsOfSpaceModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MomentsOfSpaceModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F36D0C32AA9C125007471B4 /* MomentsOfSpaceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MomentsOfSpaceModel.h; sourceTree = "<group>"; };
 		2F36D0CE2AA9C142007471B4 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
@@ -89,13 +95,15 @@
 		2F36D0D92AA9C2A9007471B4 /* MomentsOfSpaceNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MomentsOfSpaceNetworking.h; sourceTree = "<group>"; };
 		2F36D0E32AA9C2BC007471B4 /* MeditationsNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationsNetworkService.swift; sourceTree = "<group>"; };
 		2F36D0EB2AA9C362007471B4 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
+		2F36D0EE2AA9C722007471B4 /* MeditationsListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationsListReducer.swift; sourceTree = "<group>"; };
+		2F36D0F02AA9C72A007471B4 /* MeditationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationsListView.swift; sourceTree = "<group>"; };
+		2F36D0F22AA9C731007471B4 /* MeditationsListIItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationsListIItemView.swift; sourceTree = "<group>"; };
 		2F739F352AA9BE0000D07773 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		2F739F3A2AA9BECF00D07773 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2F739F3E2AA9BEED00D07773 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		2F739F402AA9BEF000D07773 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		2F7FD0FB2AA9B54400AB435E /* MomentsOfSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomentsOfSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7FD0FE2AA9B54400AB435E /* MomentsOfSpaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsOfSpaceApp.swift; sourceTree = "<group>"; };
-		2F7FD1002AA9B54400AB435E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F7FD1022AA9B54500AB435E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2F7FD1052AA9B54500AB435E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +137,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F2F47212AA9CC0700EF8B0C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2F2F47282AA9CE4300EF8B0C /* Dependencies */,
+				2F2F47242AA9CC1F00EF8B0C /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2F2F47242AA9CC1F00EF8B0C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2F2F47252AA9CC2200EF8B0C /* Modifiers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2F2F47252AA9CC2200EF8B0C /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				2F2F47262AA9CC3100EF8B0C /* ViewFirstAppearModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		2F2F47282AA9CE4300EF8B0C /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				2F2F47292AA9CE4A00EF8B0C /* Networking */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		2F2F47292AA9CE4A00EF8B0C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2F2F472A2AA9CE4F00EF8B0C /* NetworkingDependencies.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		2F36D0C22AA9C125007471B4 /* MomentsOfSpaceModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +221,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2F36D0ED2AA9C6E5007471B4 /* Meditations List */ = {
+			isa = PBXGroup;
+			children = (
+				2F36D0F42AA9C78E007471B4 /* Views */,
+				2F36D0EE2AA9C722007471B4 /* MeditationsListReducer.swift */,
+			);
+			path = "Meditations List";
+			sourceTree = "<group>";
+		};
+		2F36D0F42AA9C78E007471B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F36D0F22AA9C731007471B4 /* MeditationsListIItemView.swift */,
+				2F36D0F02AA9C72A007471B4 /* MeditationsListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2F739F2D2AA9BA5500D07773 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,7 +251,7 @@
 		2F739F2E2AA9BA5A00D07773 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				2F7FD1002AA9B54400AB435E /* ContentView.swift */,
+				2F36D0ED2AA9C6E5007471B4 /* Meditations List */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -192,8 +259,8 @@
 		2F739F2F2AA9BA5F00D07773 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2F739F3D2AA9BEE500D07773 /* Generated */,
 				2F739F302AA9BA6800D07773 /* Assets */,
+				2F739F3D2AA9BEE500D07773 /* Generated */,
 				2F739F392AA9BEBF00D07773 /* Localization */,
 			);
 			path = Resources;
@@ -250,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				2F739F2D2AA9BA5500D07773 /* App */,
+				2F2F47212AA9CC0700EF8B0C /* Common */,
 				2F739F2F2AA9BA5F00D07773 /* Resources */,
 				2F7FD1042AA9B54500AB435E /* Preview Content */,
 			);
@@ -488,10 +556,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F7FD1012AA9B54400AB435E /* ContentView.swift in Sources */,
 				2F739F3F2AA9BEED00D07773 /* Strings.swift in Sources */,
 				2F739F412AA9BEF000D07773 /* Assets.swift in Sources */,
+				2F2F47272AA9CC3100EF8B0C /* ViewFirstAppearModifier.swift in Sources */,
+				2F36D0EF2AA9C722007471B4 /* MeditationsListReducer.swift in Sources */,
+				2F36D0F12AA9C72A007471B4 /* MeditationsListView.swift in Sources */,
 				2F7FD0FF2AA9B54400AB435E /* MomentsOfSpaceApp.swift in Sources */,
+				2F2F472B2AA9CE4F00EF8B0C /* NetworkingDependencies.swift in Sources */,
+				2F36D0F32AA9C731007471B4 /* MeditationsListIItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,11 +2,13 @@ import Foundation
 import MomentsOfSpaceModel
 import CoreLocation
 
-public protocol MeditationsNetworkServiceProtocol {
+public protocol MeditationsNetworkService {
     func retrieveMeditations(for location: CLLocationCoordinate2D?) async throws -> [Meditation]
 }
 
-public final class MeditationsNetworkService: MeditationsNetworkServiceProtocol {
+public final class DefaultMeditationsNetworkService: MeditationsNetworkService {
+    public init() { }
+    
     public func retrieveMeditations(
         for location: CLLocationCoordinate2D?
     ) async throws -> [Meditation] {
@@ -14,7 +16,7 @@ public final class MeditationsNetworkService: MeditationsNetworkServiceProtocol 
     }
 }
 
-private extension MeditationsNetworkService {
+private extension DefaultMeditationsNetworkService {
     func mockedMeditations() -> [Meditation] {
         [
             Meditation(

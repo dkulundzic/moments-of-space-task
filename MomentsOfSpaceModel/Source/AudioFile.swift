@@ -1,6 +1,6 @@
 import Foundation
 
-public struct AudioFile: Codable {
+public struct AudioFile: Codable, Equatable {
     public let id: Int
     public let name: String
     public let url: URL
