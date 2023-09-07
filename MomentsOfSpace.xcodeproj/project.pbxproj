@@ -32,6 +32,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F739F2D2AA9BA5500D07773 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2F7FD0FE2AA9B54400AB435E /* MomentsOfSpaceApp.swift */,
+				2F739F2E2AA9BA5A00D07773 /* Scenes */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2F739F2E2AA9BA5A00D07773 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2F7FD1002AA9B54400AB435E /* ContentView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2F739F2F2AA9BA5F00D07773 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F739F302AA9BA6800D07773 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2F739F302AA9BA6800D07773 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2F7FD1022AA9B54500AB435E /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		2F7FD0F22AA9B54400AB435E = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +84,8 @@
 		2F7FD0FD2AA9B54400AB435E /* MomentsOfSpace */ = {
 			isa = PBXGroup;
 			children = (
-				2F7FD0FE2AA9B54400AB435E /* MomentsOfSpaceApp.swift */,
-				2F7FD1002AA9B54400AB435E /* ContentView.swift */,
-				2F7FD1022AA9B54500AB435E /* Assets.xcassets */,
+				2F739F2D2AA9BA5500D07773 /* App */,
+				2F739F2F2AA9BA5F00D07773 /* Resources */,
 				2F7FD1042AA9B54500AB435E /* Preview Content */,
 			);
 			path = MomentsOfSpace;
@@ -75,6 +107,7 @@
 			buildConfigurationList = 2F7FD1092AA9B54500AB435E /* Build configuration list for PBXNativeTarget "MomentsOfSpace" */;
 			buildPhases = (
 				2F7FD0F72AA9B54400AB435E /* Sources */,
+				2F739F312AA9BB1500D07773 /* Run Swiftlint */,
 				2F7FD0F82AA9B54400AB435E /* Frameworks */,
 				2F7FD0F92AA9B54400AB435E /* Resources */,
 			);
@@ -131,6 +164,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F739F312AA9BB1500D07773 /* Run Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CI ]; then\n  # Exit early if we are in CI environment\n  exit 0\nfi\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint MomentsOfSpace\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F7FD0F72AA9B54400AB435E /* Sources */ = {
